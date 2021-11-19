@@ -21,5 +21,14 @@ public class TelevisoreTest {
         System.out.println("Volume: "+Volume);
         System.out.println("Luminosità: "+Lum);
         System.out.println("Canale: "+Canale);
+        
+        
+        //NUOVO OGGETTO
+        Televisore televisore2 = new Televisore(23, 30, 15, 5);
+        
+        if(televisore2.equalas(televisore))
+            System.out.println("Televisori uguali");
+        else
+            System.out,println("Televisori diversi");
     }
 }
