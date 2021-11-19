@@ -36,4 +36,26 @@ public class Televisore {
     public void canalePrecedente(){
         if(this.canale>0) this.canale--;
     }
+    
+    public boolean equals(Object x){
+        //POLLICI
+        int p = ((Televisore)x).getPollici(); 
+        if(p == this.pollici) return true;
+        else return false;
+        
+        //VOLUME
+        int v = ((Televisore)x).getVolume();
+        if(v == this.volume) return true;
+        else return false;
+        
+        //LUMINOSITÀ
+        int l = ((Televisore)x).getLum();
+        if(l == this.lum) return true;
+        else return false;
+        
+        //CANALE
+        int c = ((Televisore)x).getCanale();
+        if(c == this.canale) return true;
+        else return false;
+    }
 }
